@@ -1,5 +1,6 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import pyperclip
 
 
 class Ui_MainWindow(object):
@@ -16,6 +17,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.textEdit.setFont(font)
         self.textEdit.setObjectName("textEdit")
+        self.textEdit.setReadOnly(True)
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(460, 140, 61, 71))
         self.pushButton.setObjectName("pushButton")
@@ -23,6 +25,7 @@ class Ui_MainWindow(object):
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(530, 140, 61, 71))
         self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_2.clicked.connect(self.copyPass)
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(190, 30, 251, 41))
         font = QtGui.QFont()
@@ -135,3 +138,6 @@ class Ui_MainWindow(object):
         self.textEdit.setText(passGen(int(self.textEdit_2.toPlainText()),self.checkBox.isChecked(),self.checkBox_2.isChecked(),self.checkBox_3.isChecked(),self.checkBox_4.isChecked()))
     def changeSlider(self):
         self.textEdit_2.setText(str(self.horizontalSlider.value()))
+    def copyPass(self):
+        pyperclip.copy(self.textEdit.toPlainText())
+        
