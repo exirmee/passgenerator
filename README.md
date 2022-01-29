@@ -5,6 +5,6 @@ In this day and age, computers, software, and hackers have become so advanced th
 Some sites and apps have a very convenient and fast suggestion system that gives you a very strong password online, but a very good reason to have a password generator is to make sure your password is stored somewhere. It does not and the development of programs or hackers is not stolen. Another application of this code can be that you can use it in the registration section of your software.
 
 Usage :
-you just need to install pyqt modoule and run passwordGenerator.py
+you just need to install pyqt module and run passwordGenerator.py
 
 ![Alt text](https://i.postimg.cc/76TjPG6M/passGen.png?raw=true "passGen")
