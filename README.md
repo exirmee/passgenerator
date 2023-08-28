@@ -12,7 +12,7 @@ The Password Generator App is a simple yet powerful tool designed to create secu
 
 ## Screenshots
 
-![Screenshot](passgen_screenshot.png)
+![Screenshot](passGen.png)
 *Fig. 1: The Password Generator App's user-friendly interface.*
 
 ## How It Works
